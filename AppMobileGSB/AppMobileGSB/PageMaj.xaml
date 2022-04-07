@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMobileGSB.PageMaj">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Saisie d'un echantillon" FontSize="Medium"/>
+
+            <Entry x:Name="Entrycode" Placeholder="Saisir ici un code" />
+            <Entry x:Name="EntryQte" Placeholder="Saisir ici une quantité" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="btnSuppr" Clicked="btnSuppr_Clicked" Text="Supprimer"/>
+                <Button Grid.Column="1" x:Name="btnMaj" Clicked="btnMaj_Clicked" Text="Ajouter" />
+            </Grid>
+            <Button x:Name="btnQuitter" Clicked="btnQuitter_Clicked" Text="Quitter"/>
+
+            <Label x:Name="LblMessage"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

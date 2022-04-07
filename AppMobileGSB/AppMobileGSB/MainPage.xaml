@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="AppliMenu"
+             x:Class="AppMobileGSB.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Application de gestion des échantillons de compléments alimentaires" HorizontalOptions="Center" VerticalOptions="Start" FontSize="Medium"/>
+        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        <Button Grid.Row="0"  x:Name="btnAjout" Text="Ajouter un nouvel echantillon" Clicked="btnAjout_Clicked"/>
+        <Button Grid.Row="1"  x:Name="btnList" Text="Liste des echantillons" Clicked="btnList_Clicked"/>
+        <Button Grid.Row="2" x:Name="btnMaj" Text="Maj d'un echantillons" Clicked="btnMaj_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

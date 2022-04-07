@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="GSB"
+             x:Class="AppMobileGSB.PageList">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lsview" ItemsSource="{Binding listview}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding code}" Grid.Column="0"/>
+                                <Label Text="{Binding libelle}" Grid.Column="1"/>
+                                <Label Text="{Binding quantiteStock}" Grid.Column="2"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Quitter" x:Name="btnQuitter" Clicked="btnQuitter_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
